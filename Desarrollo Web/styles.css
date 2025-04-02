@@ -1,0 +1,301 @@
+/* margenes y diseño */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    max-width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#todo-list {
+    margin-top: 20px;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button.edit-btn,
+button.delete-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+button.edit-btn:hover,
+button.delete-btn:hover {
+    background-color: #0056b3;
+}
+
+button.delete-btn {
+    background-color: #ff4c4c;
+}
+
+button.delete-btn:hover {
+    background-color: #cc0000;
+}
+
+input.edit-title,
+input.edit-date {
+    width: calc(100% - 160px); /*justa el tamaño de los inputs*/
+    margin-right: 8px;
+}
+
+.todo-item input {
+    display: inline-block;
+    width: calc(100% - 160px); 
+    font-size: 14px;
+    padding: 8px;
+}
+
+/* reinicio de margenes */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px; /* margenes para pantallas pequeñas */
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#todo-list {
+    margin-top: 20px;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button.edit-btn,
+button.delete-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+button.edit-btn:hover,
+button.delete-btn:hover {
+    background-color: #0056b3;
+}
+
+button.delete-btn {
+    background-color: #ff4c4c;
+}
+
+button.delete-btn:hover {
+    background-color: #cc0000;
+}
+
+input.edit-title,
+input.edit-date {
+    width: calc(100% - 160px); /* se ajusta el tamaño de los input */
+    margin-right: 8px;
+}
+
+.todo-item input {
+    display: inline-block;
+    width: calc(100% - 160px); 
+    font-size: 14px;
+    padding: 8px;
+}
+
+/* pantallas mas pequeñas como las (Moviles) */
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="date"] {
+        padding: 10px;
+    }
+
+    .todo-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .todo-item button {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .todo-item input {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+}
+
+/* Pantallas de un tamaño mediano*/
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .container {
+        width: 80%;
+    }
+
+    button {
+        font-size: 15px;
+    }
+
+    .todo-item {
+        flex-direction: row;
+    }
+}
