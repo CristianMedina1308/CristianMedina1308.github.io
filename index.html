@@ -2,35 +2,53 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Login + Lista de Tareas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login y Lista de Tareas</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <div class="container">
 
-    <!-- REGISTRO -->
-    <div id="auth-section">
+    <!-- Encabezado -->
+    <header class="header">
+      <h1>📝 Gestor de Tareas</h1>
+      <p>Organiza tu día fácilmente</p>
+    </header>
+
+    <!-- Sección de Registro e Inicio de Sesión -->
+    <section id="auth-section" class="card">
       <h2>Registro</h2>
       <input type="text" id="register-username" placeholder="Usuario">
       <input type="password" id="register-password" placeholder="Contraseña">
       <button onclick="register()">Registrar</button>
 
+      <hr />
+
       <h2>Iniciar Sesión</h2>
       <input type="text" id="login-username" placeholder="Usuario">
       <input type="password" id="login-password" placeholder="Contraseña">
       <button onclick="login()">Iniciar Sesión</button>
-    </div>
+    </section>
 
-    <!-- APP DE TAREAS -->
-    <div id="todo-app" style="display:none;">
+    <!-- Sección de Lista de Tareas -->
+    <section id="todo-app" class="card" style="display:none;">
       <h2>Lista de Tareas</h2>
-      <div id="welcome-user"></div>
-      <input id="todo-title" type="text" placeholder="Nueva tarea">
-      <input id="date-picker" type="date">
-      <button onclick="addTodo()">Agregar</button>
+      <div id="welcome-user" class="welcome-text"></div>
+
+      <div class="todo-inputs">
+        <input id="todo-title" type="text" placeholder="Nueva tarea">
+        <input id="date-picker" type="date">
+        <button onclick="addTodo()">Agregar</button>
+      </div>
+
       <div id="todo-list"></div>
+
       <button onclick="logout()" class="logout-btn">Cerrar Sesión</button>
-    </div>
+    </section>
 
   </div>
 
