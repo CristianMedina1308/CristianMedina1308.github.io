@@ -1,1 +1,0 @@
-Parcial Elaborado Por Cristian Cristian Camilo Medina Rodriguez
